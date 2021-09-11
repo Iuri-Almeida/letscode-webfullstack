@@ -1,0 +1,29 @@
+article {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article figure {
+    margin-right: 2rem;
+}
+
+article figure img {
+    width: 30rem;
+
+    transform: rotate(-20deg);
+}
+
+article p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+
+    color: var(--black);
+}

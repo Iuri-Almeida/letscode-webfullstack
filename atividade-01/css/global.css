@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+
+    --white: #fff;
+    --black: #000;
+    --orange: #ff8811;
+    --yellow: #e9d758;
+    --red: #881600;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--yellow);
+}
