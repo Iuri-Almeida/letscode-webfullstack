@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="./css/article.css">
         <link rel="stylesheet" href="./css/section.css">
         <link rel="stylesheet" href="./css/sprite-sheet-animation.css">
+        <link rel="stylesheet" href="./css/footer.css">
 
         <!-- Fonts Google - Roboto -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,9 +33,71 @@
             
                 <ul>
             
-                    <li><a href="#uzumaki">Uzumaki</a></li>
-                    <li><a href="#uchiha">Uchiha</a></li>
-                    <li><a href="#senju">Senju</a></li>
+                    <li>
+                        <button class="dropdown-button">
+                            <a href="#home">Home</a>
+                        </button>
+                    </li>
+
+                    <li>
+                    
+                        <div class="dropdown-container">
+                    
+                            <button class="dropdown-button">Folha</button>
+                    
+                            <div class="dropdown-data">
+                    
+                                <a href="#naruto-uzumaki">Naruto Uzumaki</a>
+                                <a href="#sasuke-uchiha">Sasuke Uchiha</a>
+                                <a href="#sakura-haruno">Sakura Haruno</a>
+                                <a href="#iruka-umino">Iruka Umino</a>
+                                <a href="#kakashi-hatake">Kakashi Hatake</a>
+                                <a href="#kiba-inuzuka">Kiba Inuzuka</a>
+                                <a href="#tenten">Tenten</a>
+                    
+                            </div>
+                    
+                        </div>
+                    
+                    </li>
+
+                    <li>
+                    
+                        <div class="dropdown-container">
+                    
+                            <button class="dropdown-button">Areia</button>
+                    
+                            <div class="dropdown-data">
+                    
+                                <a href="#gaara">Gaara</a>
+                                <a href="#temari">Temari</a>
+                    
+                            </div>
+                    
+                        </div>
+                    
+                    </li>
+
+                    <li>
+                    
+                        <div class="dropdown-container">
+                    
+                            <button class="dropdown-button">Akatsuki</button>
+                    
+                            <div class="dropdown-data">
+                    
+                                <a href="#deidara">Deidara</a>
+                                <a href="#itachi-uchiha">Itachi Uchiha</a>
+                                <a href="#kisame-hoshigaki">Kisame Hoshigaki</a>
+                                <a href="#pain">Pain</a>
+                                <a href="#obito-uchiha">Obito Uchiha</a>
+                                <a href="#sasori">Sasori</a>
+                    
+                            </div>
+                    
+                        </div>
+                    
+                    </li>
             
                 </ul>
             
@@ -42,10 +105,9 @@
         
         </header>
 
-
         <main>
 
-            <article>
+            <article id="home">
 
                 <figure>
 
@@ -53,17 +115,29 @@
 
                 </figure>
 
-                <p>
-                    Essa é uma lista sobre os&#xa0;<b>três principais</b>&#xa0;clãs do anime&#xa0;<i>Naruto</i>.
-                </p>
+                <div>
+
+                    <p>
+                        Essa é uma lista de alguns personagens do anime <b><i>Naruto</i></b>.
+                    </p>
+
+                    <span>
+                        <u>Fonte</u>: 
+                        <a href="https://pt.wikipedia.org/wiki/Lista_de_personagens_de_Naruto" target="_blank">Wikipedia</a>
+                        <del>
+                            <a href="https://www.google.com/" target="_blank">Google</a>
+                        </del>
+                    </span>
+
+                </div>
 
             </article>
 
-            <section id="uzumaki">
+            <section id="naruto-uzumaki">
 
                 <div class="section-title">
 
-                    <h1>Clã Uzumaki</h1>
+                    <h1>Naruto Uzumaki</h1>
 
                     <figure>
 
@@ -77,9 +151,731 @@
 
                     <div>
 
-                        <div id="naruto-sprite-sheet"></div>
+                        <label>
 
-                        <span>Uzumaki Naruto</span>
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="naruto-sprite-sheet"></div>
+
+                                    <span>Naruto Uzumaki</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Naruto Uzumaki</b> é o protagonista da série Naruto. Ele foi o primeiro personagem criado por Kishimoto e foi concebido com muitas características de outros personagens de mangás shōnen. Na série, Naruto tem a ambição de se tornar Hokage, o líder da Vila da Folha.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="sasuke-uchiha">
+
+                <div class="section-title">
+
+                    <h1>Sasuke Uchiha</h1>
+
+                    <figure>
+
+                        <img src="./images/uchiha.png" alt="Uchiha Logo" title="Uchiha Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="sasuke-sprite-sheet"></div>
+
+                                    <span>Sasuke Uchiha</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Sasuke Uchiha</b> é um dos membros do Time 7. Ele foi criado para ser um rival de Naruto, bem como um "gênio legal", que Kishimoto acreditava ser parte integrante de uma rivalidade ideal. Ele é um dos poucos membros remanescentes do clã Uchiha junto com seu irmão, Itachi Uchiha, que matou o resto de sua família.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="sakura-haruno">
+
+                <div class="section-title">
+
+                    <h1>Sakura Haruno</h1>
+
+                    <figure>
+
+                        <img src="./images/folha.png" alt="Aldeia da Folha Logo" title="Aldeia da Folha Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="sakura-sprite-sheet"></div>
+
+                                    <span>Sakura Haruno</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Sakura Haruno</b> é a única garota do Time 7. Kishimoto a criou como a heroína da série, apesar de ter admitido ter pouca percepção de como uma heroína ideal deveria ser. Quando criança, Sakura era irritada pelas outras crianças por causa de sua grande testa, uma característica que Kishimoto usou para dar ênfase à personagem.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="iruka-umino">
+
+                <div class="section-title">
+
+                    <h1>Iruka Umino</h1>
+
+                    <figure>
+
+                        <img src="./images/folha.png" alt="Aldeia da Folha Logo" title="Aldeia da Folha Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="iruka-sprite-sheet"></div>
+
+                                    <span>Iruka Umino</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Iruka Umino</b> é um ninja da Vila da Folha e instrutor da Academia Ninja, uma escola para aspirantes a ninja. No design original de Iruka feito por Kishimoto, ele tinha olhos "maus" e maçãs do rosto mais nítidas, mas este ele abandonou essa ideia a fim de criar uma aparência mais descontraída.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="kakashi-hatake">
+
+                <div class="section-title">
+
+                    <h1>Kakashi Hatake</h1>
+
+                    <figure>
+
+                        <img src="./images/folha.png" alt="Aldeia da Folha Logo" title="Aldeia da Folha Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="kakashi-sprite-sheet"></div>
+
+                                    <span>Kakashi Hatake</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Kakashi Hatake</b> é o líder do Time 7 e sensei de Naruto, Sasuke e Sakura. Originalmente, Kishimoto pretendia introduzir Kakashi mais cedo na série e o criou como uma pessoa tranquila que fosse capaz de manter os membros do Time 7 calmos e seguros.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="kiba-inuzuka">
+
+                <div class="section-title">
+
+                    <h1>Kiba Inuzuka</h1>
+
+                    <figure>
+
+                        <img src="./images/folha.png" alt="Aldeia da Folha Logo" title="Aldeia da Folha Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="kiba-sprite-sheet"></div>
+
+                                    <span>Kiba Inuzuka</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Kiba Inuzuka</b> é um membro do time 8 caracterizado por uma série de características caninas tais como ser muito protetor de seus companheiros e ter sentidos extremamente aguçados, como o olfato. O que mais evidencia sua ligação com os cães é a constante presença de seu cachorro ninja Akamaru.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="tenten">
+
+                <div class="section-title">
+
+                    <h1>Tenten</h1>
+
+                    <figure>
+
+                        <img src="./images/folha.png" alt="Aldeia da Folha Logo" title="Aldeia da Folha Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="tenten-sprite-sheet"></div>
+
+                                    <span>Tenten</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Tenten</b> é a garota do Time Guy e anseia em provar que uma ninja pode ser tão habilidoso como um ninja. Seguindo essa crença deixa de lado as inúmeras técnicas ninjas e utiliza somente armas ou ferramentas padrões de um ninja.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="gaara">
+
+                <div class="section-title">
+
+                    <h1>Gaara</h1>
+
+                    <figure>
+
+                        <img src="./images/areia.png" alt="Aldeia da Areia Logo" title="Aldeia da Areia Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="gaara-sprite-sheet"></div>
+
+                                    <span>Gaara</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Gaara</b> é o mais novo dos três irmãos. Ele foi criado por Kishimoto para se contrapor a Naruto Uzumaki, com uma história semelhante, mas uma personalidade altamente divergente. Antes mesmo de Gaara nascer, seu pai tinha o propósito de fazê-lo uma poderosa e perigosa arma de terror selando nele a besta de uma cauda Shukaku.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="temari">
+
+                <div class="section-title">
+
+                    <h1>Temari</h1>
+
+                    <figure>
+
+                        <img src="./images/areia.png" alt="Aldeia da Areia Logo" title="Aldeia da Areia Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="temari-sprite-sheet"></div>
+
+                                    <span>Temari</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Temari</b> é a segunda mais velha dos três. Ao contrário de seus irmãos que gostam de combate, Temari valoriza a paz, inclusive questionando o motivo pelo qual a Vila da Areia deve ir a guerra contra a Vila da Folha.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="deidara">
+
+                <div class="section-title">
+
+                    <h1>Deidara</h1>
+
+                    <figure>
+
+                        <img src="./images/akatsuki.png" alt="Akatsuki Logo" title="Akatsuki Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="deidara-sprite-sheet"></div>
+
+                                    <span>Deidara</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Deidara</b> é um antigo ninja da Vila Oculta da Pedra. Ele era também um terrorista de aluguel antes de Itachi Uchiha o forçá-lo a se juntar a Akatsuki. Embora ele tenha aceitado fazer parte da organização, ele mantém um rancor contra Itachi Uchiha e todos ao longo da série, pois ele sente que seus olhos com Sharingan menosprezam suas habilidades.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="itachi-uchiha">
+
+                <div class="section-title">
+
+                    <h1>Itachi Uchiha</h1>
+
+                    <figure>
+
+                        <img src="./images/uchiha.png" alt="Uchiha Logo" title="Uchiha Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="itachi-sprite-sheet"></div>
+
+                                    <span>Itachi Uchiha</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Itachi Uchiha</b> é um antigo ninja da Vila da Folha e parceiro de Kisame Hoshigaki. Apesar de ter vivido sua infância como a criança prodígio do clã Uchiha, Itachi é tratado como um vilão em grande parte da história.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="kisame-hoshigaki">
+
+                <div class="section-title">
+
+                    <h1>Kisame Hoshigaki</h1>
+
+                    <figure>
+
+                        <img src="./images/akatsuki.png" alt="Akatsuki Logo" title="Akatsuki Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="kisame-sprite-sheet"></div>
+
+                                    <span>Kisame Hoshigaki</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Kisame Hoshigaki</b> é um antigo ninja da Vila Oculta da Névoa e parceiro de Itachi Uchiha. Ele têm uma aparência única, com a pele azul, um rosto com brânquias e dentes triangulares e afiados.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="pain">
+
+                <div class="section-title">
+
+                    <h1>Pain</h1>
+
+                    <figure>
+
+                        <img src="./images/akatsuki.png" alt="Akatsuki Logo" title="Akatsuki Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="pain-sprite-sheet"></div>
+
+                                    <span>Pain</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Pain</b> também chamado de Nagato (Uzumaki) usa o corpo morto de Yahiko para fingir ser o líder da Akatsuki para que Tobi possa comandar secretamente a organização.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="obito-uchiha">
+
+                <div class="section-title">
+
+                    <h1>Obito Uchiha</h1>
+
+                    <figure>
+
+                        <img src="./images/akatsuki.png" alt="Akatsuki Logo" title="Akatsuki Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="obito-sprite-sheet"></div>
+
+                                    <span>Obito Uchiha</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Obito Uchiha</b> é o líder da Akatsuki que inicialmente age como um membro qualquer do grupo. Ele aparece pela primeira vez como uma pessoa descontraída e brincalhona cujas ações muitas vezes resultam em ser atacado por seu parceiro, Deidara.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="sasori">
+
+                <div class="section-title">
+
+                    <h1>Sasori</h1>
+
+                    <figure>
+
+                        <img src="./images/akatsuki.png" alt="Akatsuki Logo" title="Akatsuki Logo">
+
+                    </figure>
+
+                </div>
+
+                <div class="section-ninjas">
+
+                    <div>
+
+                        <label>
+
+                            <input type="checkbox">
+    
+                            <div class="container">
+    
+                                <div class="front">
+
+                                    <div id="sasori-sprite-sheet"></div>
+
+                                    <span>Sasori</span>
+
+                                </div>
+
+                                <div class="back">
+
+                                    <p>
+                                        <b>Sasori</b> é um antigo ninja da Vila Oculta da Areia que possui o apelido de "Sasori da Areia Vermelha". Seus pais foram mortos por Sakumo Hatake, o pai de Kakashi, deixando ele sobre os cuidados de sua avó Chiyo. Ela o ensinou a arte de controlar marionetes através de fios infudidos com chakra e ele a aprofundou para atender suas necessidades.
+                                    </p>
+
+                                </div>
+    
+                            </div>
+    
+                        </label>
 
                     </div>
 
@@ -88,6 +884,66 @@
             </section>
 
         </main>
+
+        <footer>
+
+            <div>
+
+                <table>
+
+                    <thead>
+    
+                        <tr>
+    
+                            <th>Autor:</th>
+                            <th>GitHub:</th>
+                            <th>LinkedIn:</th>
+                            <th>Instagram:</th>
+    
+                        </tr>
+    
+                    </thead>
+    
+                    <tbody>
+    
+                        <tr>
+    
+                            <td>Iuri Almeida</td>
+                            <td>
+                                <a href="https://github.com/Iuri-Almeida" target="_blank">/Iuri-Almeida</a>
+                            </td>
+                            <td>
+                                <a href="https://www.linkedin.com/in/iurilopesalmeida/" target="_blank">/in/iurilopesalmeida</a>
+                            </td>
+                            <td>
+                                <a href="https://www.instagram.com/_iurialmeida/" target="_blank">@_iurialmeida</a>
+                            </td>
+    
+                        </tr>
+    
+                    </tbody>
+
+                    <tfoot>
+
+                        <tr>
+
+                            <td colspan="4">Me segue lá! :)</td>
+
+                        </tr>
+
+                    </tfoot>
+                
+                </table>
+
+            </div>
+
+            <aside>
+
+                <span>&copy 2021</span>
+                
+            </aside>
+
+        </footer>
 
     </body>
 

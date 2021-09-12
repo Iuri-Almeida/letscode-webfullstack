@@ -9,6 +9,10 @@ a {
     color: inherit;
 }
 
+a, button {
+    cursor: pointer;
+}
+
 :root {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
@@ -22,6 +26,8 @@ a {
 
 html {
     scroll-behavior: smooth;
+
+    overflow: hidden;
 }
 
 body {
