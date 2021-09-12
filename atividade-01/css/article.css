@@ -17,13 +17,12 @@ article figure img {
     transform: rotate(-20deg);
 }
 
-article p {
+article div p, article div span {
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
 
-    display: flex;
-    align-items: center;
-
     color: var(--black);
 }
+
+article div span a:hover { text-decoration: underline }
