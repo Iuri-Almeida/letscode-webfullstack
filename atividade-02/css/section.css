@@ -17,14 +17,6 @@ section {
     top: -12.6rem;
 }
 
-.section-title h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 2.4rem;
-
-    color: var(--red);
-}
-
 .section-title figure img {
     width: 3rem;
 
