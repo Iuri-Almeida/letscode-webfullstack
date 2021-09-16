@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Registro Catálogo | Atividade 02</title>
+
+        <!-- Bootstrap - CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/footer.css">
+
+        <!-- Fonts Google - Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+
+        <header>
+
+            <nav>
+            
+                <ul class="d-flex align-items-center justify-content-center" >
+            
+                    <li>
+
+                        <div class="dropdown-container">
+                    
+                            <button class="dropdown-button">Links</button>
+                    
+                            <div class="dropdown-data">
+                    
+                                <a href="./index.html">Início</a>
+                                <a href="./registrar.html">Registrar</a>
+                    
+                            </div>
+                    
+                        </div>
+
+                    </li>
+
+                </ul>
+            
+            </nav>
+        
+        </header>
+
+        <main>
+
+            <section class="container d-flex align-items-center justify-content-center vw-100 vh-100">
+
+                <form class="d-flex align-items-center flex-column col-8">
+
+                    <div class="form-group w-100 mb-4">
+                    
+                        <label class="h4" for="name">Nome</label>
+                    
+                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Informe o nome do personagem" title="Nome do personagem">
+                    
+                    </div>
+
+                    <div class="form-group w-100 mb-4">
+                    
+                        <label class="h4" for="image">Imagem (Sprite Sheet)</label>
+                    
+                        <input type="file" class="form-control form-control-lg" id="image" title="Sprite Sheet do personagem">
+                    
+                    </div>
+
+                    <div class="form-group w-100 mb-4">
+                    
+                        <label class="h4" for="description">Descrição</label>
+                    
+                        <input type="text" class="form-control form-control-lg" id="description" placeholder="Informe a descrição do personagem" title="Descrição do personagem">
+                    
+                    </div>
+
+                    <div class="form-group w-100 mb-4">
+                    
+                        <label class="h4" for="clan">Aldeia/Clã</label>
+                    
+                        <input type="text" class="form-control form-control-lg" id="clan" placeholder="Informe a aldeia/clã do personagem" title="Clã do personagem">
+                    
+                    </div>
+                    
+                    <button type="submit" class="btn btn-lg btn-outline-primary w-25">Registrar</button>
+                
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <div>
+
+                <table>
+
+                    <thead>
+    
+                        <tr>
+    
+                            <th>Autor:</th>
+                            <th>GitHub:</th>
+                            <th>LinkedIn:</th>
+                            <th>Instagram:</th>
+    
+                        </tr>
+    
+                    </thead>
+    
+                    <tbody>
+    
+                        <tr>
+    
+                            <td>Iuri Almeida</td>
+                            <td>
+                                <a href="https://github.com/Iuri-Almeida" target="_blank">/Iuri-Almeida</a>
+                            </td>
+                            <td>
+                                <a href="https://www.linkedin.com/in/iurilopesalmeida/" target="_blank">/in/iurilopesalmeida</a>
+                            </td>
+                            <td>
+                                <a href="https://www.instagram.com/_iurialmeida/" target="_blank">@_iurialmeida</a>
+                            </td>
+    
+                        </tr>
+    
+                    </tbody>
+
+                    <tfoot>
+
+                        <tr>
+
+                            <td colspan="4">Me segue lá! :)</td>
+
+                        </tr>
+
+                    </tfoot>
+                
+                </table>
+
+            </div>
+
+            <aside>
+
+                <span>&copy 2021</span>
+                
+            </aside>
+
+        </footer>
+        
+    </body>
+
+</html>

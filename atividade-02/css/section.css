@@ -1,0 +1,123 @@
+section {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    position: relative;
+    top: -12.6rem;
+}
+
+.section-title h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+
+    color: var(--red);
+}
+
+.section-title figure img {
+    width: 3rem;
+
+    margin-left: 1rem;
+}
+
+.section-ninjas {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label {
+    transform-style: preserve-3d;
+
+    width: 16.6rem;
+    height: 21.8rem;
+
+    position: absolute;
+
+    perspective: 1000px;
+
+    transform: translate(-50%, -50%);
+
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transform-style: preserve-3d;
+
+    transition: transform .6s;
+}
+
+.front, .back {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--black);
+  
+    background: var(--white);
+
+    border-radius: 1.5rem;
+
+    backface-visibility: hidden;
+}
+
+.front {
+    justify-content: space-between;
+    flex-direction: column;
+
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+}
+
+.back p {
+    text-align: center;
+
+    padding: 0 1rem;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.front span {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+    color: var(--black);
+}
+
+.container .back {
+    transform: rotateY(180deg);
+}
+
+input:checked + .container {
+    transform: rotateY(180deg);
+}

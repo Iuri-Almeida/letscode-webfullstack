@@ -1,0 +1,129 @@
+#naruto-sprite-sheet,
+#sasuke-sprite-sheet,
+#sakura-sprite-sheet,
+#iruka-sprite-sheet,
+#kakashi-sprite-sheet,
+#kiba-sprite-sheet,
+#tenten-sprite-sheet,
+#gaara-sprite-sheet,
+#temari-sprite-sheet,
+#deidara-sprite-sheet,
+#itachi-sprite-sheet,
+#pain-sprite-sheet,
+#obito-sprite-sheet,
+#sasori-sprite-sheet {
+    width: 4.525rem;
+    height: 6.348rem;
+
+    background: url('../images/sprite-sheet-naruto.png');
+
+    animation: naruto 1s steps(4) infinite;
+
+    transform: scale(1.6);
+}
+
+#sasuke-sprite-sheet { background: url('../images/sprite-sheet-sasuke.jpeg') }
+
+#sakura-sprite-sheet { background: url('../images/sprite-sheet-sakura.png') }
+
+#iruka-sprite-sheet { background: url('../images/sprite-sheet-iruka.png') }
+
+#kakashi-sprite-sheet { background: url('../images/sprite-sheet-kakashi.png') }
+
+#kiba-sprite-sheet {
+    width: 4.83rem;
+    height: 6.3rem;
+
+    background: url('../images/sprite-sheet-kiba.png')
+}
+
+#tenten-sprite-sheet {
+    width: 3.325rem;
+
+    background: url('../images/sprite-sheet-tenten.png')
+}
+
+#gaara-sprite-sheet {
+    width: 3.025rem;
+    height: 5.548rem;
+
+    animation: gaara 1s steps(4) infinite;
+
+    background: url('../images/sprite-sheet-gaara.png')
+}
+
+#temari-sprite-sheet {
+    width: 3.925rem;
+
+    background: url('../images/sprite-sheet-temari.png')
+}
+
+#deidara-sprite-sheet { background: url('../images/sprite-sheet-deidara.png') }
+
+#itachi-sprite-sheet {
+    width: 3rem;
+    height: 4.8rem;
+
+    background: url('../images/sprite-sheet-itachi.png');
+
+    animation: itachi 1s steps(4) infinite;
+
+    transform: scale(2);
+}
+
+#kisame-sprite-sheet {
+    width: 5.775rem;
+    height: 7.15rem;
+
+    background: url(../images/sprite-sheet-kisame.png);
+    
+    animation: kisame 1s steps(4) infinite;
+    
+    transform: scale(1.5);
+}
+
+#pain-sprite-sheet { background: url('../images/sprite-sheet-pain.png') }
+
+#obito-sprite-sheet { background: url('../images/sprite-sheet-obito.jpeg') }
+
+#sasori-sprite-sheet { background: url('../images/sprite-sheet-sasori.png') }
+
+@keyframes naruto {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -18.1rem;
+    }
+}
+
+@keyframes gaara {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -14.1rem;
+    }
+}
+
+@keyframes kisame {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -31.1rem;
+    }
+}
+
+@keyframes itachi {
+    from {
+        background-position-x: 0;
+    }
+
+    to {
+        background-position-x: -12.8rem;
+    }
+}
