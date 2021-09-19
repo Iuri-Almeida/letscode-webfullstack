@@ -28,6 +28,12 @@ nav ul li {
     list-style: none;
 }
 
+.dropdown-container {
+    position: relative;
+
+    display: inline-block;
+}
+
 .dropdown-button {
     font-style: normal;
     font-weight: 700;
@@ -50,12 +56,6 @@ nav ul li {
     background: var(--yellow);
 
     color: var(--orange);
-}
-
-.dropdown-container {
-    position: relative;
-
-    display: inline-block;
 }
 
 .dropdown-data {
