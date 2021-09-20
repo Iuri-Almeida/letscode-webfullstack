@@ -1,28 +1,64 @@
-article {
-    width: 100vw;
-    height: 100vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-article figure {
-    margin-right: 2rem;
-}
-
 article figure img {
-    width: 30rem;
-
     transform: rotate(-20deg);
 }
 
 article div p, article div span {
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
 
     color: var(--black);
 }
 
-article div span a:hover { text-decoration: underline }
+article div span a:hover {
+    text-decoration: underline;
+
+    color: var(--black);
+}
+
+@media screen and (max-width: 576px) {
+    article div {
+        width: 155%;
+    }
+
+    article div p, article div span {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    article div {
+        width: 135%;
+    }
+
+    article div p, article div span {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    article div {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    article div {
+        width: 90%;
+    }
+
+    article div p, article div span {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    article div {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    article div {
+        width: 60%;
+    }
+}

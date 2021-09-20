@@ -12,6 +12,9 @@
 
         <!-- Bootstrap - CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+        <!-- Bootstrap - JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     
         <!-- CSS -->
         <link rel="stylesheet" href="./css/global.css">
@@ -30,11 +33,11 @@
     
     <body>
 
-        <header>
+        <header class="w-100 fixed-top d-flex align-items-end justify-content-center">
 
-            <nav>
+            <nav class="p-0 w-50 d-flex align-items-center justify-content-center">
             
-                <ul>
+                <ul class="d-flex align-items-center justify-content-between m-0 p-0 w-100">
             
                     <li>
 
@@ -121,11 +124,11 @@
 
         <main>
 
-            <article id="home">
+            <article id="home" class="vw-100 vh-100 d-flex align-items-center justify-content-center">
 
-                <figure>
+                <figure class="mb-0 mx-5 d-flex align-items-center justify-content-end">
 
-                    <img src="./images/naruto.png" alt="Naruto Logo" title="Naruto Logo">
+                    <img class="col-6" src="./images/naruto.png" alt="Naruto Logo" title="Naruto Logo">
 
                 </figure>
 
@@ -147,9 +150,9 @@
 
             </article>
 
-            <section id="naruto-uzumaki">
+            <section id="naruto-uzumaki" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Naruto Uzumaki</h1>
 
@@ -161,17 +164,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="naruto-sprite-sheet"></div>
 
@@ -179,9 +182,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Naruto Uzumaki</b> é o protagonista da série Naruto. Ele foi o primeiro personagem criado por Kishimoto e foi concebido com muitas características de outros personagens de mangás shōnen. Na série, Naruto tem a ambição de se tornar Hokage, o líder da Vila da Folha.
                                     </p>
 
@@ -197,9 +200,9 @@
 
             </section>
 
-            <section id="sasuke-uchiha">
+            <section id="sasuke-uchiha" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Sasuke Uchiha</h1>
 
@@ -211,17 +214,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="sasuke-sprite-sheet"></div>
 
@@ -229,9 +232,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Sasuke Uchiha</b> é um dos membros do Time 7. Ele foi criado para ser um rival de Naruto, bem como um "gênio legal", que Kishimoto acreditava ser parte integrante de uma rivalidade ideal.
                                     </p>
 
@@ -247,9 +250,9 @@
 
             </section>
 
-            <section id="sakura-haruno">
+            <section id="sakura-haruno" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Sakura Haruno</h1>
 
@@ -261,17 +264,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="sakura-sprite-sheet"></div>
 
@@ -279,9 +282,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Sakura Haruno</b> é a única garota do Time 7. Kishimoto a criou como a heroína da série, apesar de ter admitido ter pouca percepção de como uma heroína ideal deveria ser.
                                     </p>
 
@@ -297,9 +300,9 @@
 
             </section>
 
-            <section id="iruka-umino">
+            <section id="iruka-umino" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Iruka Umino</h1>
 
@@ -311,17 +314,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="iruka-sprite-sheet"></div>
 
@@ -329,9 +332,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Iruka Umino</b> é um ninja da Vila da Folha e instrutor da Academia Ninja, uma escola para aspirantes a ninja. No design original de Iruka feito por Kishimoto, ele tinha olhos "maus" e maçãs do rosto mais nítidas.
                                     </p>
 
@@ -347,9 +350,9 @@
 
             </section>
 
-            <section id="kakashi-hatake">
+            <section id="kakashi-hatake" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Kakashi Hatake</h1>
 
@@ -361,17 +364,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="kakashi-sprite-sheet"></div>
 
@@ -379,9 +382,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Kakashi Hatake</b> é o líder do Time 7 e sensei de Naruto, Sasuke e Sakura. Originalmente, Kishimoto pretendia introduzir Kakashi mais cedo na série e o criou como uma pessoa tranquila que fosse capaz de manter os membros do Time 7 calmos e seguros.
                                     </p>
 
@@ -397,9 +400,9 @@
 
             </section>
 
-            <section id="kiba-inuzuka">
+            <section id="kiba-inuzuka" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Kiba Inuzuka</h1>
 
@@ -411,17 +414,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="kiba-sprite-sheet"></div>
 
@@ -429,9 +432,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Kiba Inuzuka</b> é um membro do time 8 caracterizado por uma série de características caninas tais como ser muito protetor de seus companheiros e ter sentidos extremamente aguçados, como o olfato.
                                     </p>
 
@@ -447,9 +450,9 @@
 
             </section>
 
-            <section id="tenten">
+            <section id="tenten" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Tenten</h1>
 
@@ -461,17 +464,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="tenten-sprite-sheet"></div>
 
@@ -479,9 +482,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Tenten</b> é a garota do Time Guy e anseia em provar que uma ninja pode ser tão habilidoso como um ninja. Seguindo essa crença deixa de lado as inúmeras técnicas ninjas e utiliza somente armas ou ferramentas padrões de um ninja.
                                     </p>
 
@@ -497,9 +500,9 @@
 
             </section>
 
-            <section id="gaara">
+            <section id="gaara" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Gaara</h1>
 
@@ -511,17 +514,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="gaara-sprite-sheet"></div>
 
@@ -529,9 +532,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Gaara</b> é o mais novo dos três irmãos. Ele foi criado por Kishimoto para se contrapor a Naruto Uzumaki, com uma história semelhante, mas uma personalidade altamente divergente.
                                     </p>
 
@@ -547,9 +550,9 @@
 
             </section>
 
-            <section id="temari">
+            <section id="temari" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Temari</h1>
 
@@ -561,17 +564,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="temari-sprite-sheet"></div>
 
@@ -579,9 +582,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Temari</b> é a segunda mais velha dos três. Ao contrário de seus irmãos que gostam de combate, Temari valoriza a paz, inclusive questionando o motivo pelo qual a Vila da Areia deve ir a guerra contra a Vila da Folha.
                                     </p>
 
@@ -597,9 +600,9 @@
 
             </section>
 
-            <section id="deidara">
+            <section id="deidara" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Deidara</h1>
 
@@ -611,17 +614,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="deidara-sprite-sheet"></div>
 
@@ -629,9 +632,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Deidara</b> é um antigo ninja da Vila Oculta da Pedra. Ele era também um terrorista de aluguel antes de Itachi Uchiha o forçá-lo a se juntar a Akatsuki. Embora ele tenha aceitado fazer parte da organização, ele mantém um rancor contra Itachi Uchiha e todos ao longo da série.
                                     </p>
 
@@ -647,9 +650,9 @@
 
             </section>
 
-            <section id="itachi-uchiha">
+            <section id="itachi-uchiha" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Itachi Uchiha</h1>
 
@@ -661,17 +664,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="itachi-sprite-sheet"></div>
 
@@ -679,9 +682,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Itachi Uchiha</b> é um antigo ninja da Vila da Folha e parceiro de Kisame Hoshigaki. Apesar de ter vivido sua infância como a criança prodígio do clã Uchiha, Itachi é tratado como um vilão em grande parte da história.
                                     </p>
 
@@ -697,9 +700,9 @@
 
             </section>
 
-            <section id="kisame-hoshigaki">
+            <section id="kisame-hoshigaki" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Kisame Hoshigaki</h1>
 
@@ -711,17 +714,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="kisame-sprite-sheet"></div>
 
@@ -729,9 +732,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Kisame Hoshigaki</b> é um antigo ninja da Vila Oculta da Névoa e parceiro de Itachi Uchiha. Ele têm uma aparência única, com a pele azul, um rosto com brânquias e dentes triangulares e afiados.
                                     </p>
 
@@ -747,9 +750,9 @@
 
             </section>
 
-            <section id="pain">
+            <section id="pain" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Pain</h1>
 
@@ -761,17 +764,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="pain-sprite-sheet"></div>
 
@@ -779,9 +782,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Pain</b> também chamado de Nagato (Uzumaki) usa o corpo morto de Yahiko para fingir ser o líder da Akatsuki para que Tobi possa comandar secretamente a organização.
                                     </p>
 
@@ -797,9 +800,9 @@
 
             </section>
 
-            <section id="obito-uchiha">
+            <section id="obito-uchiha" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Obito Uchiha</h1>
 
@@ -811,17 +814,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="obito-sprite-sheet"></div>
 
@@ -829,9 +832,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Obito Uchiha</b> é o líder da Akatsuki que inicialmente age como um membro qualquer do grupo. Ele aparece pela primeira vez como uma pessoa descontraída e brincalhona cujas ações muitas vezes resultam em ser atacado por seu parceiro, Deidara.
                                     </p>
 
@@ -847,9 +850,9 @@
 
             </section>
 
-            <section id="sasori">
+            <section id="sasori" class="vw-100 vh-100 d-flex align-items-center justify-content-center flex-column">
 
-                <div class="section-title">
+                <div class="section-title d-flex align-items-start justify-content-center position-relative">
 
                     <h1>Sasori</h1>
 
@@ -861,17 +864,17 @@
 
                 </div>
 
-                <div class="section-ninjas">
+                <div class="d-flex align-items-center justify-content-between">
 
                     <div>
 
                         <label>
 
-                            <input type="checkbox">
+                            <input class="d-none" type="checkbox">
     
-                            <div class="container">
+                            <div class="container w-100 h-100 d-flex align-items-center justify-content-center">
     
-                                <div class="front">
+                                <div class="front position-absolute w-100 h-100 d-flex align-items-center justify-content-between flex-column py-5">
 
                                     <div id="sasori-sprite-sheet"></div>
 
@@ -879,9 +882,9 @@
 
                                 </div>
 
-                                <div class="back">
+                                <div class="back position-absolute w-100 h-100 d-flex align-items-center justify-content-center">
 
-                                    <p>
+                                    <p class="text-center px-2 m-0">
                                         <b>Sasori</b> é um antigo ninja da Vila Oculta da Areia que possui o apelido de "Sasori da Areia Vermelha". Seus pais foram mortos por Sakumo Hatake, o pai de Kakashi, deixando ele sobre os cuidados de sua avó Chiyo.
                                     </p>
 
