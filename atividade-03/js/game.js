@@ -1,57 +1,27 @@
+// 
 function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * ((max + 1) - min) + min);
 }
 
-function getCategory(n) {
-    let category;
-
-    switch (n) {
-        case 0:
-            category = 'Animal'
-            break
-        
-        case 1:
-            category = 'Comida'
-            break
-
-        case 2:
-            category = 'Marca'
-            break
-    }
-
-    return category
-}
-
-function fetchApi(url) {
-    return fetch(url)
-}
-
-function getJSONResponse(res) {
-    return res.json()
-}
-
-async function ibgeApi() {
+async function fetchApi(url) {
 
     try {
-        // definindo a URL da API IBGE
-        const ibgeUrl = 'https://servicodados.ibge.gov.br/api/v1/paises/'
 
-        // pegando o conteúdo da API no formato JSON
-        const api = await fetchApi(ibgeUrl)
-        const response = await getJSONResponse(api)
+        let response = await fetch(url);
+        let data = await response.json();
 
-        return response
+        return data;
     } catch (error) {
-        return false
+
+        console.error(error);
+        return null;
+
     }
+
 }
 
-// Creating the data base
-const WORDS = [
-    ['leao', 'gato', 'cachorro', 'tigre'], // animal
-    ['macarrao', 'carne', 'frango', 'peixe'], // food
-    ['apple', 'mercedes', 'tesla', 'coca-cola'], // brand
-];
+// setting the API URL
+const IBGE_URL = 'https://servicodados.ibge.gov.br/api/v1/paises/';
 
 // gallows
 const gallowsDisplay = [
@@ -109,18 +79,19 @@ const gallowsDisplay = [
 const alpha = Array.from(Array(26)).map((e, i) => i + 65);
 const alphabet = alpha.map((x) => String.fromCharCode(x));
 
-function game() {
+async function game() {
 
-    // choosing category and word randomly
-    const CATEGORY_NUMBER = generateRandomNumber(0, WORDS.length);
-    const WORD_NUMBER = generateRandomNumber(0, WORDS[CATEGORY_NUMBER].length);
+    // getting the API data
+    let data = await fetchApi(IBGE_URL);
+
+    const WORD_NUMBER = generateRandomNumber(0, data.length);
 
     // getting category
-    let category = getCategory(CATEGORY_NUMBER);
+    let category = data[WORD_NUMBER].localizacao.regiao.nome;
 
     // getting the word for the game
-    const WORD = WORDS[CATEGORY_NUMBER][WORD_NUMBER].split('');
-
+    let WORD = data[WORD_NUMBER].nome.abreviado.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, "").split('');
+    
     // setting variables
     let lifes = ['❤', '❤', '❤', '❤', '❤'];
     let displayController = 0;
@@ -151,11 +122,11 @@ function game() {
             else if (hint.length != 1) msg = 'É preciso digitar somente uma única letra. '
             else if (!alphabet.find(x => x == hint)) msg = 'O que foi digitado não é uma string. '
 
-            hint = prompt(`Categoria: ${category}\nVidas: ${lifes.join(' ')}\nLetras chutadas: ${hintedWords.join(', ')}\n${gallowsDisplay[displayController]}\nPalavra: ${underlines.join(' ')}\n\n${msg}Informe seu chute:`).trim()
+            hint = prompt(`Localização: ${category}\nVidas: ${lifes.join(' ')}\nLetras chutadas: ${hintedWords.join(', ')}\n${gallowsDisplay[displayController]}\nPalavra: ${underlines.join(' ')}\n\n${msg}Informe seu chute:`).trim().normalize('NFD').replace(/[\u0300-\u036f]/g, "");
 
         } while (hintedWords.find(x => x == hint) || hint.length != 1 || !alphabet.find(x => x == hint.toUpperCase()))
 
-        // put the letter into the array
+        // put the letter into the hinted array
         hintedWords.push(hint);
 
         // check if it is one of the letters of the word
@@ -175,25 +146,27 @@ function game() {
 
         // victory
         if (hits == WORD.length) {
-            alert('Você venceu!')
+            alert(`Você venceu! Você acertou a palavra: ${WORD.join('').toUpperCase()}`);
             break
         }
 
     }
 
     // defeat
-    if (lifes.length == 0) alert(`Você perdeu!\n${gallowsDisplay[displayController]}`)
+    if (lifes.length == 0) alert(`Você perdeu!\n${gallowsDisplay[displayController]}\nA palavra era: ${WORD.join('').toUpperCase()}`)
+}
+
+async function playAgain() {
+    while (true) {
+    
+        let answer = prompt('Deseja jogar novamente? (S/N)').trim().toUpperCase()[0]
+    
+        if (answer == 'N') break;
+        else if (answer == 'S') await game();
+        else continue;
+    
+    }
 }
 
 // play
-game();
-
-while (true) {
-    
-    let answer = prompt('Deseja jogar novamente? (S/N)').trim().toUpperCase()[0]
-
-    if (answer == 'N') break;
-    else if (answer == 'S') game();
-    else continue;
-
-}
+game().then(() => playAgain())
