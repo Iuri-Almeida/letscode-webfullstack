@@ -1,0 +1,350 @@
+[
+    {
+        "name": "Deidara",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Hidan",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Kisame",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Kakuzu",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Konan",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Pain",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Sasori",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Obito",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Itachi",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Zetsu",
+        "cla": "Akatsuki"
+    },
+    {
+        "name": "Shukaku",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Matatabi",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Isobu",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Son Goku",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Kokuou",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Saiken",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Choumei",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Hachibi",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Kurama",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Juubi",
+        "cla": "Bijuu"
+    },
+    {
+        "name": "Onoki",
+        "cla": "Aldeia da Pedra"
+    },
+    {
+        "name": "Shino",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Torune",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Chouji",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Gamabunta",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Gamakichi",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Sakura",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Kakashi",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Hashirama",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Tobirama",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Hiruzen",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Minato",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Tsunade",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Hanabi",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Hiashi",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Hinata",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Neji",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Kiba",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Jiraiya",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Dan",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Guy",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Anko",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Moegi",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Ibiki",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Shikaku",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Shikamaru",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Nawaki",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Rin",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Lee",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Sai",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Asuma",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Konohamaru",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Danzou",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Shin",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Namida",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Tenten",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Fugaku",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Izuna",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Madara",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Sasuke",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Shisui",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Iruka",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Kushina",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Naruto",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Kabuto",
+        "cla": "Equipe do Orochimaru"
+    },
+    {
+        "name": "Fu",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Ino",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Inoichi",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Yamato",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Kurenai",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Orochimaru",
+        "cla": "Aldeia da Folha"
+    },
+    {
+        "name": "Bee",
+        "cla": "Aldeia da Nuvem"
+    },
+    {
+        "name": "A",
+        "cla": "Aldeia da Nuvem"
+    },
+    {
+        "name": "Juugo",
+        "cla": "Equipe do Sasuke"
+    },
+    {
+        "name": "Kimimaro",
+        "cla": "Equipe do Orochimaru"
+    },
+    {
+        "name": "Karin",
+        "cla": "Equipe do Sasuke"
+    },
+    {
+        "name": "Ashura",
+        "cla": "Ootsutsuki"
+    },
+    {
+        "name": "Hagoromo",
+        "cla": "Ootsutsuki"
+    },
+    {
+        "name": "Kaguya",
+        "cla": "Ootsutsuki"
+    },
+    {
+        "name": "Indra",
+        "cla": "Ootsutsuki"
+    },
+    {
+        "name": "Haku",
+        "cla": "Aldeia da Névoa"
+    },
+    {
+        "name": "Yagura",
+        "cla": "Aldeia da Névoa"
+    },
+    {
+        "name": "Zabuza",
+        "cla": "Aldeia da Névoa"
+    },
+    {
+        "name": "Utakata",
+        "cla": "Aldeia da Névoa"
+    },
+    {
+        "name": "Kankurou",
+        "cla": "Aldeia da Areia"
+    },
+    {
+        "name": "Gaara",
+        "cla": "Aldeia da Areia"
+    },
+    {
+        "name": "Temari",
+        "cla": "Aldeia da Areia"
+    }
+]
