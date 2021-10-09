@@ -1,31 +1,21 @@
 // Precisa fazer uso de uma abordagem cliente/servidor
 // Eu fiz utilizando a própria extensão Live Server do VSCode
-function loadJSON(callback) {   
+function loadJSON(callback) {
 
-    var xobj = new XMLHttpRequest();
+    let xmlHttpRequest = new XMLHttpRequest();
 
-    xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'characters.json', true);
+    xmlHttpRequest.overrideMimeType("application/json");
+    xmlHttpRequest.open('GET', 'characters.json', true);
 
-    xobj.onreadystatechange = function () {
+    xmlHttpRequest.onreadystatechange = () => { if (xmlHttpRequest.readyState == 4 && xmlHttpRequest.status == "200") callback(xmlHttpRequest.responseText); };
 
-        if (xobj.readyState == 4 && xobj.status == "200") {
-            callback(xobj.responseText);
-        }
-
-    };
-
-    xobj.send(null);  
+    xmlHttpRequest.send(null);  
 
 }
 
-function len(word) {
-    if (word === '') return 0;
+function len(word) { return (word === '') ? 0 : 1 + len(word.substr(1)); }
 
-    return 1 + len(word.substr(1));
-}
-
-loadJSON((res) => {
+loadJSON(res => {
 
     // todos os personagens presentes no arquivo characters.json
     const characters = JSON.parse(res);
@@ -37,22 +27,21 @@ loadJSON((res) => {
     akatsukiMembers.map(e => e.isDead = true);
     characters.map(e => e.nameLength = len(e.name));
 
-    // utilização do reduce()
+    // utilização do reduce() e spread operator
     const akatsukiNames = akatsukiMembers.reduce((array, elem) => [...array, elem.name], []);
 
     // utilização do this
-    function list(i) {
-        console.log(`#${i} ${this.name} - ${this.cla}`);
-    }
+    function list(i) { console.log(`#${i} ${this.name} - ${this.cla}`); }
 
     // função utilizando prototype do Array
-    Array.prototype.myForEach = function (callback) {
-        for (let i = 0; i < this.length; i++) callback(this[i], i, this);
-    };
+    Array.prototype.myForEach = function (callback) { for (let i = 0; i < this.length; i++) callback(this[i], i, this); };
 
+    console.log('*** Listando o JSON ***');
     characters.myForEach((e, i) => list.call(e, i + 1));
 
-    console.log(`Characters: ${(characters.every(e => e.isDead)) ? 'All dead' : 'Not all dead'}`);
+    console.log('');
+    console.log('*** Usando funções de alta ordem ***');
     console.log(`Akatsuki Members: ${(akatsukiMembers.every(e => e.isDead)) ? 'All dead' : 'Not all dead'}`);
+    console.log(`Busca Naruto: ${characters.find(e => e.name == "Naruto").name} - ${characters.find(e => e.name == "Naruto").cla}`);
 
 });
