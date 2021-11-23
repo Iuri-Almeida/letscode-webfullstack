@@ -1,0 +1,39 @@
+.low {
+    background: #f5e769;
+}
+
+.medium {
+    background: #f5b869;
+}
+
+.high {
+    background: #f56969;
+}
+
+/* HTML */
+
+mat-card {
+    background: var(--todo-list-background) !important;
+
+    color: var(--todo-list-color) !important;
+
+    border-radius: 0;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.card mat-expansion-panel {
+    flex: 1;
+
+    margin-left: 1.4em;
+}
+
+.card mat-panel-title, .card mat-panel-description, .card li, .card p {
+    color: var(--todo-list-color);
+}

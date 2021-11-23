@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-background: white;
+    --header-background: green;
+    --header-color: white;
+    --header-button-background: lightgreen;
+    --todo-list-background: blue;
+    --todo-list-color: purple;
+
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+html, body {
+    height: 100%;
+}

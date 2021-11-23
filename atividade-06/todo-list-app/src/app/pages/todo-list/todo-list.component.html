@@ -1,0 +1,49 @@
+<ul>
+
+    <mat-card>
+    
+        <mat-card-header>
+
+            <mat-card-title>Lista de Tarefas</mat-card-title>
+
+        </mat-card-header>
+
+        <mat-card-content>
+    
+            <ng-container *ngFor="let task of tasksList">
+
+                <div class="card">
+
+                    <mat-checkbox [checked]="task.done" (change)="markAsDone(task)"></mat-checkbox>
+
+                    <mat-expansion-panel id="title-{{ task.id }}" [ngStyle]="{ background: getColor(task.priority) }">
+                    
+                        <mat-expansion-panel-header>
+                            
+                            <mat-panel-title>{{ task.title }}</mat-panel-title>
+                            <mat-panel-description>{{ task.description }}</mat-panel-description>
+
+                        </mat-expansion-panel-header>
+                        
+                        <ul>
+
+                            <li>Data de Entrega: {{ task.dueDate }}</li>
+                            <li>Prioridade: {{ task.priority }}</li>
+
+                        </ul>
+
+                        <br>
+
+                        <p>Anotações da Tarefa {{ task.id }}</p>
+                    
+                    </mat-expansion-panel>
+
+                </div>
+
+            </ng-container>
+
+        </mat-card-content>
+    
+    </mat-card>
+
+</ul>
