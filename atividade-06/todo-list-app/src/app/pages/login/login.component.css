@@ -1,3 +1,46 @@
+mat-card {
+    width: 100vw;
+    height: 100vh;
+
+    border-radius: 0;
+
+    background: var(--login-background);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+mat-form-field label {
+    color: var(--login-color);
+
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+mat-form-field input, mat-card form input:last-child {
+    width: 100%;
+
+    padding: 0.6em;
+}
+
+mat-card form input:last-child {
+    background: var(--login-submit-background);
+
+    color: var(--login-submit-color);
+
+    border: 0;
+    border-radius: 0.4em;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s
+}
+
+mat-card form input:last-child:hover {
+    opacity: 0.9;
+}
+
 .form-content {
     display: flex;
     flex-direction: column;

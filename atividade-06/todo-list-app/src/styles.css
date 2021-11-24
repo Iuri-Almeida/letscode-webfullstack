@@ -11,6 +11,10 @@
     --header-button-background: lightgreen;
     --todo-list-background: blue;
     --todo-list-color: purple;
+    --login-background: yellow;
+    --login-color: pink;
+    --login-submit-background: green;
+    --login-submit-color: white;
 
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }

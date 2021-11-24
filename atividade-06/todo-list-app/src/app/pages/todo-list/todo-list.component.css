@@ -10,8 +10,6 @@
     background: #f56969;
 }
 
-/* HTML */
-
 mat-card {
     background: var(--todo-list-background) !important;
 
