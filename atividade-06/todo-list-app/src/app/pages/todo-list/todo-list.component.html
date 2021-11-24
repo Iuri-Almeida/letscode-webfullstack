@@ -8,7 +8,7 @@
 
         </mat-card-header>
 
-        <mat-card-content>
+        <mat-card-content *ngIf="gambi | async as taskList; else displaySpinner">
     
             <ng-container *ngFor="let task of tasksList">
 
@@ -33,6 +33,9 @@
                         </ul>
 
                         <button (click)="deleteTask(task)">Deletar</button>
+                        <button (click)="updateTask(task)">Editar</button>
+
+                        <p>{{ task.id }}</p>
 
                     </mat-expansion-panel>
 
@@ -41,6 +44,12 @@
             </ng-container>
 
         </mat-card-content>
+
+        <ng-template #displaySpinner>
+        
+            <mat-spinner></mat-spinner>
+        
+        </ng-template>
     
     </mat-card>
 

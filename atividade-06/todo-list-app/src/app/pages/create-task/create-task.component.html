@@ -26,15 +26,19 @@
         
         </mat-form-field>
 
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
         
             <mat-label>Prioridade</mat-label>
 
             <mat-select>
             
-                <mat-option *ngFor="let option of priorityOptions" (click)="selectedOption(option)">{{ option.name }}</mat-option>
+                <mat-option value="0" (click)="selectedOption($event)">Baixa</mat-option>
+                <mat-option value="1" (click)="selectedOption($event)">Média</mat-option>
+                <mat-option value="2" (click)="selectedOption($event)">Alta</mat-option>
             
             </mat-select>
+
+            <input matInput id="priority" formControlName="priority">
 
         </mat-form-field>
 

@@ -26,3 +26,7 @@ mat-card form input:last-child {
     font-weight: bold;
     font-size: 0.8em;
 }
+
+#priority {
+    display: none;
+}

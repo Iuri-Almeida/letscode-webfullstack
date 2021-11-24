@@ -19,21 +19,15 @@ export class TodoServicesService {
     this.tasks.forEach(task => task.forEach(item => this.taskList.push(item)));
   }
 
+  getGambi() {
+    return this.http.get<Task[]>(URL);
+  }
+
   getTasks() {
 	  return this.taskList;
   }
 
-  addTask(title: string, description: string, date: string, priority: TaskPriority): void {
-    let dueDate = new Date(Date.parse(date));
-    let task: Task = {
-      id: 0,
-      title: title,
-      description: description,
-      dueDate: dueDate,
-      priority: priority,
-      labels: [],
-      done: false
-    }
+  addTask(task: Task): void {
 
     this.taskList.push(task);
     
@@ -58,6 +52,25 @@ export class TodoServicesService {
     }
 
     this.router.navigate(['']);
+  }
+
+  updateTask(task: Task, oldTask: Task): void {
+    this.taskList.forEach((e, i) => {
+      if (e.id === oldTask.id) {
+        this.taskList[i] = task;
+      }
+    });
+
+    this.router.navigate([''], {queryParams: {
+      id: task.id,
+      title: task.title,
+      description: task.description,
+      dueDate: task.dueDate,
+      priority: task.priority,
+      labels: task.labels,
+      done: task.done,
+      update: true
+    }});
   }
 
 }
