@@ -1,6 +1,8 @@
 import { Component, OnInit, EventEmitter } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+
 import { TaskPriority } from 'src/app/models/task.model';
+import { TodoServicesService } from 'src/app/services/todo-services.service';
 
 @Component({
   selector: 'app-create-task',
@@ -18,7 +20,7 @@ export class CreateTaskComponent implements OnInit {
 
   createTaskForm?: FormGroup;
 
-  constructor() { }
+  constructor(private todoService: TodoServicesService) { }
 
   ngOnInit(): void {
     this.createTaskForm = new FormGroup({
@@ -30,15 +32,16 @@ export class CreateTaskComponent implements OnInit {
   }
 
   onSubmit(): void {
-    let id = 0;
     let title = this.createTaskForm?.controls['title'].value;
     let description = this.createTaskForm?.controls['description'].value;
     let dueDate = this.createTaskForm?.controls['date'].value;
     let priority = this.selectedPriority;
-    let labels = [];
-    let done = false;
 
-    console.log(title, description, dueDate, priority);
+    if (priority == undefined) {
+      priority = TaskPriority.LOW;
+    }
+
+    this.todoService.addTask(title, description, dueDate, priority);
   }
 
   selectedOption(option: any): void {

@@ -7,10 +7,10 @@
             <mat-card-title>Lista de Tarefas</mat-card-title>
 
         </mat-card-header>
-
-        <mat-card-content *ngIf="tasksList | async as taskList; else displaySpinner">
+        <!-- *ngIf="tasksList | async as taskList; else displaySpinner" -->
+        <mat-card-content>
     
-            <ng-container *ngFor="let task of taskList">
+            <ng-container *ngFor="let task of tasksList">
 
                 <div class="card">
 
