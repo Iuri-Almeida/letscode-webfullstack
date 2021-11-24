@@ -21,7 +21,7 @@ export class TodoListComponent implements OnInit {
 		let description = this.route.snapshot.queryParamMap.get('description');
 		let dueDate = this.route.snapshot.queryParamMap.get('dueDate');
 		let priority: TaskPriority;
-		let labels = this.route.snapshot.queryParamMap.get('labless');
+		let labels = this.route.snapshot.queryParamMap.get('labels');
 		let done = this.route.snapshot.queryParamMap.get('done');
 
 		switch (this.route.snapshot.queryParamMap.get('priority')) {
