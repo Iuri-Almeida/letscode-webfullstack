@@ -102,4 +102,8 @@ export class TodoListComponent implements OnInit {
 		}
 	}
 
+	deleteTask(task: Task): void {
+		this.todoListService.deleteTask(task);
+	}
+
 }

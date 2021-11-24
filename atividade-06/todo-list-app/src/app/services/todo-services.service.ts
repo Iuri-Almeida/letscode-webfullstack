@@ -23,7 +23,7 @@ export class TodoServicesService {
 	  return this.taskList;
   }
 
-  addTask(title: string, description: string, date: string, priority: TaskPriority) {
+  addTask(title: string, description: string, date: string, priority: TaskPriority): void {
     let dueDate = new Date(Date.parse(date));
     let task: Task = {
       id: 0,
@@ -46,6 +46,18 @@ export class TodoServicesService {
       labels: task.labels,
       done: task.done
     }});
+  }
+
+  deleteTask(task: Task): void {
+    const index = this.taskList.indexOf(task);
+    
+    if (index > -1) {
+      this.taskList.splice(index, 1);
+    } else {
+      alert('Task not found!')
+    }
+
+    this.router.navigate(['']);
   }
 
 }
