@@ -11,7 +11,6 @@ import { TodoServicesService } from 'src/app/services/todo-services.service';
 })
 export class TodoListComponent implements OnInit {
 
-	// tasksList: Task[] = [];
 	tasksList?: Observable<Task[]>;
 
 	constructor(private todoListService: TodoServicesService) {}

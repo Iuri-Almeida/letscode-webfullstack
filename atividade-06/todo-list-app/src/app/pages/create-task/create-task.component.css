@@ -1,0 +1,28 @@
+mat-card {
+    border-radius: 0;
+
+    background: var(--create-task-background);
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+mat-card form input:last-child {
+    padding: 1em 2em;
+
+    cursor: pointer;
+
+    background: var(--create-task-submit-background);
+
+    color: var(--create-task-submit-color);
+
+    border: 0;
+    border-radius: 0.8em;
+
+    font-weight: bold;
+    font-size: 0.8em;
+}

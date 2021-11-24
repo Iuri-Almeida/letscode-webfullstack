@@ -1,1 +1,45 @@
-<p>create-task works!</p>
+<mat-card>
+
+    <form class="form-content" *ngIf="createTaskForm" [formGroup]="createTaskForm" (ngSubmit)="onSubmit()">
+
+        <mat-form-field appearance="outline">
+        
+            <label>Título</label>
+        
+            <input matInput type="text" placeholder="Digite o título" formControlName="title">
+        
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+        
+            <label>Descrição</label>
+        
+            <input matInput type="text" placeholder="Digite a descrição" formControlName="description">
+        
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+        
+            <label>Data</label>
+        
+            <input matInput type="date" formControlName="date">
+        
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+        
+            <mat-label>Prioridade</mat-label>
+
+            <mat-select>
+            
+                <mat-option *ngFor="let option of priorityOptions" (click)="selectedOption(option)">{{ option.name }}</mat-option>
+            
+            </mat-select>
+
+        </mat-form-field>
+
+        <input type="submit">
+        
+    </form>
+
+</mat-card>

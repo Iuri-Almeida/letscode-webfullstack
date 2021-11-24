@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 export class LoginService {
   private __isAuthenticated: boolean = false;
 
-  private userEmail: string = 'letscode@gmail.com';
-  private userPassword: string = 'angular';
+  private userEmail: string = '1';
+  private userPassword: string = '1';
   
   private showOnMenu: EventEmitter<boolean> = new EventEmitter<boolean>();
 
