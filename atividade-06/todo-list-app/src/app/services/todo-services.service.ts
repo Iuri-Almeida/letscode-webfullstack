@@ -16,7 +16,7 @@ export class TodoServicesService {
   taskList: Task[] = [];
 
   constructor(private http: HttpClient, private router: Router) {
-    this.tasks.forEach(task => task.forEach(item => this.taskList.push(item)));
+    // this.tasks.forEach(task => task.forEach(item => this.taskList.push(item)));
   }
 
   getGambi() {
