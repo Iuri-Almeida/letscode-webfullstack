@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { LoginService } from 'src/app/services/login.service';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  render: boolean = false;
+
+  constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {
+    this.loginService.menu.subscribe(show => this.render = show);
+  }
+
+  logout(): void {
+    this.loginService.logout();
   }
 
 }

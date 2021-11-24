@@ -1,10 +1,18 @@
-<mat-toolbar>
+<mat-toolbar *ngIf="render">
 
     <span routerLink="">ToDo List</span>
 
     <span class="example-spacer"></span>
 
-    <button mat-icon-button>Create Task</button>
-    <button mat-icon-button>Log Out</button>
+    <button 
+        mat-raise-button
+        routerLink="task"
+        routerLinkActive="white-border"
+    >Create Task</button>
+    
+    <button
+        mat-raise-button
+        (click)="logout()"
+    >Log Out</button>
 
 </mat-toolbar>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 import { Task, TaskPriority } from 'src/app/models/task.model';
 import { TodoServicesService } from 'src/app/services/todo-services.service';
@@ -10,7 +11,8 @@ import { TodoServicesService } from 'src/app/services/todo-services.service';
 })
 export class TodoListComponent implements OnInit {
 
-	tasksList: Task[] = [];
+	// tasksList: Task[] = [];
+	tasksList?: Observable<Task[]>;
 
 	constructor(private todoListService: TodoServicesService) {}
 
