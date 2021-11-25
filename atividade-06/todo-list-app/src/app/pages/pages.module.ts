@@ -16,6 +16,7 @@ import { AppRoutingModule } from '../app-routing.module';
 import { CreateTaskComponent } from './create-task/create-task.component';
 import { LoginComponent } from './login/login.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
+import { DirectivesModule } from '../directives/directives.module';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { TodoListComponent } from './todo-list/todo-list.component';
     MatProgressSpinnerModule,
     MatIconModule,
     MatSelectModule,
+    DirectivesModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule

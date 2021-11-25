@@ -2,6 +2,11 @@ mat-card {
     border-radius: 0;
 
     background: var(--create-task-background);
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form {

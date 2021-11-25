@@ -5,19 +5,25 @@
 }
 
 :root {
-    --body-background: white;
-    --header-background: green;
-    --header-color: white;
-    --header-button-background: lightgreen;
-    --todo-list-background: blue;
-    --todo-list-color: purple;
-    --login-background: black;
-    --login-color: pink;
-    --login-submit-background: green;
-    --login-submit-color: white;
-    --create-task-background: brown;
-    --create-task-submit-background: pink;
-    --create-task-submit-color: black;
+    --white: white;
+    --black: #2F242C;
+    --purple: #502274;
+    --pink: #A42CD6;
+    --body-background: var(--black);
+    --header-background: var(--purple);
+    --header-color: var(--white);
+    --header-button-background: var(--pink);
+    --todo-list-background: transparent;
+    --todo-list-color: var(--pink);
+    --login-background: var(--black);
+    --login-submit-background: var(--purple);
+    --login-submit-color: var(--white);
+    --create-task-background: transparent;
+    --create-task-submit-background: var(--purple);
+    --create-task-submit-color: var(--white);
+    --low: #f5e769;
+    --medium: #f5b869;
+    --hard: #f56969;
 
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
@@ -32,4 +38,8 @@ button {
 
 html, body {
     height: 100%;
+}
+
+body {
+    background: var(--body-background);
 }

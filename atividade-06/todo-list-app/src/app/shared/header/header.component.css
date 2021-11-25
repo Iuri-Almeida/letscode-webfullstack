@@ -22,13 +22,18 @@ mat-toolbar button {
     padding: .6em;
 
     border-radius: .5em;
-    border: 0;
 
     background: var(--header-button-background);
 
     transition: opacity .2s;
+
+    color: var(--header-color);
 }
 
 mat-toolbar button:hover {
     opacity: .7;
+}
+
+.activeLink {
+    border: 1px solid var(--white);
 }

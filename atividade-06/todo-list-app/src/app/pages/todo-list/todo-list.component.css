@@ -1,13 +1,13 @@
 .low {
-    background: #f5e769;
+    background: var(--low);
 }
 
 .medium {
-    background: #f5b869;
+    background: var(--medium);
 }
 
 .high {
-    background: #f56969;
+    background: var(--hard);
 }
 
 mat-card {
@@ -33,5 +33,26 @@ mat-card {
 }
 
 .card mat-panel-title, .card mat-panel-description, .card li, .card p {
-    color: var(--todo-list-color);
+    color: var(--black);
+}
+
+#edit, #delete {
+    padding: 0.8em;
+    border-radius: 0.4em;
+}
+
+#edit {
+    border: 0;
+
+    color: var(--white);
+    
+    background: var(--pink);
+
+    margin-right: 0.6em;
+}
+
+#delete {
+    border: 1px solid var(--pink);
+
+    color: var(--pink);
 }

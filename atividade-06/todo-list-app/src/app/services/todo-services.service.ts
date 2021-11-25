@@ -27,6 +27,10 @@ export class TodoServicesService {
 	  return this.taskList;
   }
 
+  // getTaskById(taskId: string) {
+  //   return this.taskList.filter(task => task.id === taskId);
+  // }
+
   addTask(task: Task): void {
 
     this.taskList.push(task);

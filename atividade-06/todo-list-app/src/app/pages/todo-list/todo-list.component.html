@@ -27,13 +27,13 @@
                         
                         <ul>
 
-                            <li>Data de Entrega: {{ task.dueDate }}</li>
-                            <li>Prioridade: {{ task.priority }}</li>
+                            <li><span appDirective>Data de Entrega:</span> {{ task.dueDate | date }}</li>
+                            <li><span appDirective>Prioridade:</span> {{ task.priority }}</li>
 
                         </ul>
 
-                        <button (click)="deleteTask(task)">Deletar</button>
-                        <button (click)="updateTask(task)">Editar</button>
+                        <button id="edit" (click)="updateTask(task)">Editar</button>
+                        <button id="delete" (click)="deleteTask(task)">Deletar</button>
 
                     </mat-expansion-panel>
 
