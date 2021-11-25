@@ -120,7 +120,7 @@ export class TodoListComponent implements OnInit {
 	}
 
 	updateTask(task: Task): void {
-		this.router.navigate(['task'], {queryParams: {
+		this.router.navigate(['create-task'], {queryParams: {
 			id: task.id,
 			title: task.title,
 			description: task.description,

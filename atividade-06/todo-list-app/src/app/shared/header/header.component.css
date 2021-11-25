@@ -14,12 +14,10 @@ mat-toolbar span:first-child {
     flex: 1 1 auto;
 }
 
-mat-toolbar button:last-child {
-    margin-left: 0.4em;
-}
-
 mat-toolbar button {
     padding: .6em;
+
+    margin-right: 0.8em;
 
     border-radius: .5em;
 

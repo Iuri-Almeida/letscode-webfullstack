@@ -1,12 +1,18 @@
 <mat-toolbar *ngIf="render">
 
-    <span routerLink="">ToDo List</span>
+    <span routerLink="tasks">ToDo List</span>
 
     <span class="example-spacer"></span>
 
     <button 
         mat-raise-button
-        routerLink="task"
+        routerLink="tasks"
+        routerLinkActive="activeLink"
+    >Home</button>
+
+    <button 
+        mat-raise-button
+        routerLink="create-task"
         routerLinkActive="activeLink"
     >Create Task</button>
     

@@ -35,7 +35,7 @@ export class TodoServicesService {
 
     this.taskList.push(task);
     
-    this.router.navigate([''], {queryParams: {
+    this.router.navigate(['tasks'], {queryParams: {
       id: task.id,
       title: task.title,
       description: task.description,
@@ -55,7 +55,7 @@ export class TodoServicesService {
       alert('Task not found!')
     }
 
-    this.router.navigate(['']);
+    this.router.navigate(['tasks']);
   }
 
   updateTask(task: Task, oldTask: Task): void {
@@ -65,7 +65,7 @@ export class TodoServicesService {
       }
     });
 
-    this.router.navigate([''], {queryParams: {
+    this.router.navigate(['tasks'], {queryParams: {
       id: task.id,
       title: task.title,
       description: task.description,

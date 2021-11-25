@@ -8,12 +8,12 @@ import { TodoListComponent } from './pages/todo-list/todo-list.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'tasks',
     component: TodoListComponent,
     canActivate: [AuthGuard]
   },
   {
-    path: 'task',
+    path: 'create-task',
     component: CreateTaskComponent,
     canActivate: [AuthGuard]
   },
@@ -23,8 +23,8 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: ''
-  },
+    redirectTo: 'login'
+  }
 ];
 
 @NgModule({

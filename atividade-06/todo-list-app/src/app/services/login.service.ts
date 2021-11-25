@@ -27,7 +27,7 @@ export class LoginService {
     this.showOnMenu.emit(this.__isAuthenticated);
 
     if (this.__isAuthenticated) {
-      this.router.navigate(['']);
+      this.router.navigate(['tasks']);
     }
   }
 
