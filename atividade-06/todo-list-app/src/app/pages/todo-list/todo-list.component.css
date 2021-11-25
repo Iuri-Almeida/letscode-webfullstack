@@ -11,9 +11,9 @@
 }
 
 mat-card {
-    background: var(--todo-list-background) !important;
+    background: var(--todo-list-background);
 
-    color: var(--todo-list-color) !important;
+    color: var(--white);
 
     border-radius: 0;
 }

@@ -28,6 +28,8 @@ mat-toolbar button {
     transition: opacity .2s;
 
     color: var(--header-color);
+
+    font-weight: bold;
 }
 
 mat-toolbar button:hover {
